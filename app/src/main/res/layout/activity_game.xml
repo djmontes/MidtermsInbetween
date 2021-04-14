@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Game">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/tablebackground"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:layout_width="450dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:text="IN-BETWEEN GAME"
+        android:textColor="#FFFFFF"
+        android:textSize="45dp"
+        android:gravity="center"
+        android:fontFamily="@font/ubuntu_bold"
+        />
+
+    <ImageView
+        android:layout_width="138.2dp"
+        android:layout_height="221.2dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/card3"
+        android:src="@drawable/backcard"
+        />
+
+    <ImageView
+        android:layout_width="138.2dp"
+        android:layout_height="221.2dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/card2"
+        android:layout_toRightOf="@id/card3"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/backcard"
+        />
+
+    <ImageView
+        android:layout_width="138.2dp"
+        android:layout_height="221.2dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/card3"
+        android:layout_marginRight="40dp"
+        android:id="@+id/card1"
+        android:src="@drawable/backcard"
+        />
+
+    <Button
+        android:id="@+id/btnstart"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_above="@id/btnreset"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="START"
+        android:fontFamily="@font/ubuntu_bold"
+        android:background="@drawable/custom_btnstart"
+        />
+
+    <Button
+        android:id="@+id/btnreset"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="RESET"
+        android:fontFamily="@font/ubuntu_bold"
+        android:background="@drawable/custom_btnreset"
+        />
+
+    <Button
+        android:id="@+id/btnbet"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_above="@id/btnfold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:text="BET"
+        android:fontFamily="@font/ubuntu_bold"
+        android:background="@drawable/custom_btnbet"
+        />
+
+    <Button
+        android:id="@+id/btnfold"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:text="FOLD"
+        android:fontFamily="@font/ubuntu_bold"
+        android:background="@drawable/custom_btnfold"
+        />
+
+    <Button
+        android:id="@+id/btnhigh"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_above="@id/btnlow"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/btnbet"
+        android:layout_marginBottom="5dp"
+        android:text="HIGH"
+        android:fontFamily="@font/ubuntu_bold"
+        android:background="@drawable/custom_btnhigh"
+        />
+
+    <Button
+        android:id="@+id/btnlow"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/btnfold"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:text="LOW"
+        android:fontFamily="@font/ubuntu_bold"
+        android:background="@drawable/custom_btnlow"
+        />
+
+    <Button
+        android:id="@+id/btnshow"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_above="@id/btnclear"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="SHOW"
+        android:fontFamily="@font/ubuntu_bold"
+        android:background="@drawable/custom_btnshow"
+        />
+
+    <Button
+        android:id="@+id/btnclear"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="CLEAR"
+        android:fontFamily="@font/ubuntu_bold"
+        android:background="@drawable/custom_btnclear"
+        />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/txtmoney"
+        android:layout_toRightOf="@id/btnstart"
+        android:layout_marginLeft="20dp"
+        android:text="PLACE YOUR BET HERE"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/ubuntu_bold"
+        />
+
+    <EditText
+        android:id="@+id/txtmoney"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/btnreset"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:hint="1000"
+        android:textSize="30dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:drawableLeft="@drawable/sign_money"
+        android:fontFamily="@font/ubuntu_bold"
+        android:background="@drawable/custom_txtmoney"
+        />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:text="MONEY: "
+        android:textSize="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/lblmoney"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/ubuntu_bold"
+    />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:text=" "
+        android:id="@+id/lblmoney"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/ubuntu_bold"
+        android:textSize="30dp"
+        />
+
+</RelativeLayout>
