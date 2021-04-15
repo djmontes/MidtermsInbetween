@@ -27,7 +27,7 @@
     />
     <TextView
             android:text="At the start of the game the player is given a specific
-amount of money which is 3000PHP the Player has to click the 'Start' button in order to proceed. The player must bet some of his/her money in order to play
+amount of money which is 1000PHP the Player has to click the 'Start' button in order to proceed. The player must bet some of his/her money in order to play
 The AI will produce random cards to play which will indicate whether the player wins or loses. The option 'Higher'/'Lower' will appear
 when both random cards has the same value and the player must select either Higher or Lower."
             android:layout_width="wrap_content"
